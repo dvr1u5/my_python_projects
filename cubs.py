@@ -1,0 +1,17 @@
+N, M = input().split()
+N = int(N)
+M = int(M)
+NumList = set()
+NumList2 = set()
+for i in range(N):
+    K = int(input())
+    NumList.add(K)
+for i in range(M):
+    L = int(input())
+    NumList2.add(L)
+print(len(NumList & NumList2))
+print(*sorted(NumList & NumList2))
+print(len(NumList - NumList2))
+print(*sorted(NumList - NumList2))
+print(len(NumList2 - NumList))
+print(*sorted(NumList2 - NumList))

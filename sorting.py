@@ -1,0 +1,5 @@
+N = input().split()
+N = str(N)
+NumList = list(map(int, input().split()))
+sortedList = sorted(NumList)
+print(' '.join(map(str, sortedList)))
